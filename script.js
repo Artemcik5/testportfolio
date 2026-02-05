@@ -54,5 +54,9 @@ function switchLanguage(lang){
 
 switchLanguage('cz');
 
+window.addEventListener('load', () => {
+  window.scrollTo(0, 0);
+});
+
 enBtn.addEventListener('click', () => switchLanguage('en'));
 czBtn.addEventListener('click', () => switchLanguage('cz'));
