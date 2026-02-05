@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artem Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class=everything>
+    <div class="language-switcher">
+        <button id="cz-btn" class="active">CZ</button>
+        <button id="en-btn">EN</button>
+    </div>
+
+
+<nav>
+    <div class="nav-blur-panel">
+        <ul>
+            <li><a href="#about" data-en="About Me" data-cz = "O mně">About Me</a></li>
+            <li><a href="#projects" data-en="Projects" data-cz = "Projekty">Projects</a></li>
+            <li><a href="#skills" data-en="Skills" data-cz = "Dovednosti">Skills</a></li>
+            <li><a href="#contact" data-en="Contact" data-cz = "Kontakt">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+      
+<section id="about" class="section">
+    <h1 class="glow-text" data-en="Hello, I'm Artem." data-cz="O mně">Hello, I'm Artem</h1>
+    <p data-en="I'm passionate about programming, and all else related to tech" 
+       data-cz="Jmenuji se Artem Bobik, je mi 14 let a už velmi dlouho mě baví technika a vše s ní spojené.
+Zajímám se o počítače, telefony, operační systémy, programování a vývoj her. Kromě techniky mě také baví vědy jako biologie, chemie a fyzika, protože rád poznávám jak i ty nejlehčí věci fungují.
+">
+    </p>
+</section>
+
+  <section id="skills" class="section">
+    <h1 class="glow-text" data-en="Technical skills" data-cz="Technické dovednosti">Technical skills</h1>
+    <p data-en="I'm passionate about programming, and all else related to tech" 
+       data-cz="V programování se nejlépe se vyznám v LuaU, což využívám na vývoj her, vše ostatní nejradši programuji v Pythonu a na webové stránky používám HTML a CSS. Rád zkouším a zahrávám si s různými operačními systémy, hlavně verzemi Windows a distribucemi Linuxu, ve kterých si rád zahraju s příkazovým řádkem. Používal jsem a dělal jsem různé testy s Arduino Uno, ale poslední dobou se spíše zajímám o software. Také se více zabývám umělou inteligencí, hlavně lokálním provozováním různých modelů přes program Ollama.
+">
+    </p>
+</section>
+  
+    </div>
+    <section id="projects" class="section">
+    <h2 class="glow-text" data-en="Projects" data-cz="Projekty">Projects</h2>
+      <br>
+    <div class="details-accordion">
+        <details>
+            <summary>
+                <span>Local STT</span>
+                <span class="arrow">◂</span>
+            </summary>
+            <p data-cz="Funkce programu spočívá v tom, že zadržíte jednu klávesu (Třeba F4), mluvíte, nahraje se audio, to se transkribuje v text a uloží v proměnné a zmáčknutím jiné zvolené klávesy, (Třeba F5) se vloží text z proměnné. Nejvíce mě k zahájení tohoto projektu inspirovalo, jak normalizovaný byl sběr dat lidí a případné ukládání hodin hlasu uživatelů nebylo něco, s čím bych se smířil. Řešení se ukázalo jako docela dobré, projekt, i když stále v rané fázi, je již funkční a dovedu si představit, že ho budu používat já i další lidé. <a href='https://github.com/Artemcik5/Local-STT'>Github</a>"
+ data-en="The program's function is that you hold a keybind, (f4 for example) and it records your voice, after that it transcribes it, and stores it in a variable. Pressing another set keybind, (f5 for example) pastes the text from the variable. What inspired me most to start this project was how normalised data collection of people or potential storage of hours of the voice of users was not something that I could be fine with. The project, though still in an early stage, is fully functional and I could see me and others using this program <a href='https://github.com/Artemcik5/Local-STT'>Github</a>">
+            </p>
+        </details>
+
+        <details>
+            <summary>
+                <span>Simple Username Lookup</span>
+                <span class="arrow">◂</span>
+            </summary>
+            <p data-cz="Program vykonával vyhledávání po různých platformách jako Youtube a Github, zjišťoval jestli uživatel se zadaným jménem existoval nebo ne a dal výsledky z vyhledávání. Jeden z prvních projektů, který jsem dělal v pythonu bez žádných instrukcí a asi jedna z těžších voleb na první projekt v pythonu. Projekt byl podle mě velký úspěch a dostal jsem ještě větší motivaci se zlepšovat v programování. <a href='https://github.com/Artemcik5/Simple-Username-Lookup'>Github</a>"
+ data-en="W I P DESC <a href='https://github.com/Artemcik5/Simple-Username-Lookup'>Github</a>">
+            </p>
+        </details>
+    </div>
+</section>
+  </div>
+    </div>
+    
+    <section id="contact" class="section">
+        <h2 class="glow-text" data-en="Contact" data-cz="Kontakt">Contact</h2>
+        <p data-en="Email : artemtime7@gmail.com" data-cz="Email : artemtime7@gmail.com"></p>
+<p id="github" 
+   data-en='Github: <a href="https://github.com/Artemcik5" target="_blank">@Artemcik5</a>' 
+   data-cz='Github: <a href="https://github.com/Artemcik5" target="_blank">@Artemcik5</a>'>
+</p>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
