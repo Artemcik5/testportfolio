@@ -58,15 +58,15 @@ nav {
 }
 
 
+
 .section {
-  
     min-height: 1vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    padding-left: 600px;
-    padding-right:600px;
+    /*justify-content: center; is not good bc it centers the headers too so they cant align to the left*/
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
     padding-bottom:150px;
     padding-top:150px;
     opacity: 0;
