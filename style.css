@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background: linear-gradient(135deg, #0f0f1f, #1f1f2f);
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+.section p {
+    max-width: 800px; 
+    text-align: left;
+}
+
+
+nav {
+    position: fixed;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 1000;
+}
+
+.nav-blur-panel {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 15px;
+    background: rgba(20, 20, 20, 0.4);
+    background */
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.nav-blur-panel ul {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-blur-panel ul li a {
+    color: #00f0ff;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-blur-panel ul li a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+
+.section {
+  
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 100px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.glow-text {
+    font-size: 3em;
+    color: #00f0ff;
+    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;  
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #00f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00f0ff;
+}
+
+.glow-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00f0ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.glow-link:hover {
+    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;
+}
+
+a:hover{
+    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;
+
+}
+
+.skills-tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00f0ff;
+}
+
+
+.tab-button {
+    padding: 8px 16px;
+    border-radius: 10px;
+    background: rgba(20,20,20,0.4);
+    backdrop-filter: blur(10px);
+    border: none;
+    cursor: pointer;
+    color: #00f0ff;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.tab-button.active, .tab-button:hover {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+.skill-card {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #00f0ff;
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.3);
+    color: #00ffff;
+}
+
+
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.language-switcher button {
+    background: transparent;
+    border: 1px solid #00f0ff;
+    color: #00f0ff;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.language-switcher button.active, .language-switcher button:hover {
+    background: #00f0ff;
+    color: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.glow-link, #github a {
+    color: #00f0ff; 
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a {
+    color: #00f0ff; 
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.glow-link:hover, #github a:hover {
+    color: #00ffff; 
+    text-shadow:
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 30px #00ffff;
+}
+
+.details-accordion {
+    width: 600px;     
+    max-width: 100%;
+}
+
+.details-accordion details {
+    border: 1px solid #00f0ff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    background: rgba(0,0,0,0.5);
+    overflow: hidden;  
+}
+
+
+.details-accordion summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #00f0ff;
+    font-weight: 700;
+}
+
+.details-accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+
+.details-accordion .arrow {
+    transition: transform 0.3s ease;
+}
+
+.details-accordion details[open] .arrow {
+    transform: rotate(-90deg);
+}
+
+
+.details-accordion p {
+    margin: 0;
+    padding: 0 18px 16px;
+    color: #ccc;
+    animation: fadeIn 0.3s ease;
+}
+
+.box div{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 6px solid rgba(255,255,255,0.8);
+}
+
+.box div:nth-child(1){
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2){
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3){
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4){
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(5){
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6){
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7){
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(8){
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9){
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(10){
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+
+.box div:nth-child(11){
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes animate{
+  0%{
+    transform: scale(0) translateY(-90px) rotate(360deg);
+    opacity: 0.1
+  }
+  100%{
+    transform: scale(1.3) translateY(-90px) rotate(0deg);
+    opacity: 0;
+  }
+}
