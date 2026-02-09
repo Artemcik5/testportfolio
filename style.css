@@ -346,6 +346,37 @@ a {
   animation: animate 5s linear infinite;
 }
 
+
+
+.floating-box {
+  position: fixed;
+}
+
+.shape-square {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(255,255,255,0.8);
+}
+
+.shape-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 6px solid rgba(255,255,255,0.8);
+}
+
+.shape-triangle {
+  background: transparent;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  height: 0;
+  width: 0;
+  border-bottom: 300px solid blue;
+
+}
+
+
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to   { opacity: 1; }
