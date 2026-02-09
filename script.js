@@ -54,9 +54,30 @@ function switchLanguage(lang){
 
 switchLanguage('cz');
 
-window.addEventListener('load', () => {
-  window.scrollTo(-1000, -1000);
-});
+const shapesContainer = document.querySelector('.floating-shapes');
+const shapeTypes = ['shape-square', 'shape-circle', 'shape-triangle'];
+const numShapes = 12; // adjust as needed
+
+for (let i = 0; i < numShapes; i++) {
+  const box = document.createElement('div');
+  box.classList.add('floating-box');
+
+  // Assign random shape
+  const shape = shapeTypes[Math.floor(Math.random() * shapeTypes.length)];
+  box.classList.add(shape);
+
+  // Random static position
+  box.style.top = Math.random() * 90 + 'vh'; // avoid edges
+  box.style.left = Math.random() * 90 + 'vw';
+
+  // Random animation duration
+  const duration = (5 + Math.random() * 10).toFixed(2);
+  box.style.animationDuration = `${duration}s`;
+
+  shapesContainer.appendChild(box);
+}
 
 enBtn.addEventListener('click', () => switchLanguage('en'));
 czBtn.addEventListener('click', () => switchLanguage('cz'));
+
+
